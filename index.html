@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>PEC4</title>
+	<meta name="generator" content="LibreOffice 24.2.4.2 (MacOSX)" />
+	<meta name="created" content="2024-06-24T10:26:07.861736214" />
+	<meta name="changed" content="2024-06-24T10:28:20.925295294" />
+	<meta name="classification" content="Desarrollo back-end con PHP" />
+	<style type="text/css">
+		@page {
+			size: 21cm 29.7cm;
+			margin-left: 2cm;
+			margin-right: 2cm;
+			margin-top: 1cm;
+			margin-bottom: 2cm
+		}
+
+		p {
+			color: #000078;
+			line-height: 115%;
+			margin-bottom: 0.25cm;
+			background: transparent
+		}
+
+		td p {
+			color: #000078;
+			orphans: 0;
+			widows: 0;
+			background: transparent
+		}
+
+		h1 {
+			color: #000078;
+			line-height: 100%;
+			text-align: left;
+			page-break-inside: avoid;
+			orphans: 2;
+			widows: 2;
+			margin-left: 2.5cm;
+			margin-right: 1.75cm;
+			margin-top: 0.49cm;
+			margin-bottom: 0.14cm;
+			direction: ltr;
+			background: transparent;
+			page-break-before: auto;
+			page-break-after: avoid
+		}
+
+		h1.western {
+			font-size: 18pt;
+			font-weight: bold
+		}
+
+		h1.cjk {
+			font-size: 18pt;
+			font-weight: bold
+		}
+
+		h1.ctl {
+			font-size: 18pt
+		}
+
+		h2 {
+			color: #000078;
+			margin-top: 0.35cm;
+			margin-bottom: 0.21cm;
+			background: transparent;
+			page-break-after: avoid
+		}
+
+		h2.western {
+			font-family: "Liberation Sans", sans-serif;
+			font-size: 16pt;
+			font-weight: bold
+		}
+
+		h2.cjk {
+			font-family: "PingFang SC";
+			font-size: 16pt;
+			font-weight: bold
+		}
+
+		h2.ctl {
+			font-family: "Arial Unicode MS";
+			font-size: 16pt;
+			font-weight: bold
+		}
+
+		h3 {
+			color: #000078;
+			margin-top: 0.25cm;
+			margin-bottom: 0.21cm;
+			background: transparent;
+			page-break-after: avoid
+		}
+
+		h3.western {
+			font-family: "Liberation Sans", sans-serif;
+			font-size: 14pt;
+			font-weight: bold
+		}
+
+		h3.cjk {
+			font-family: "PingFang SC";
+			font-size: 14pt;
+			font-weight: bold
+		}
+
+		h3.ctl {
+			font-family: "Arial Unicode MS";
+			font-size: 14pt;
+			font-weight: bold
+		}
+
+		h4 {
+			color: #000078;
+			margin-top: 0.21cm;
+			margin-bottom: 0.21cm;
+			background: transparent;
+			page-break-after: avoid
+		}
+
+		h4.western {
+			font-family: "Liberation Sans", sans-serif;
+			font-size: 13pt;
+			font-style: italic;
+			font-weight: bold
+		}
+
+		h4.cjk {
+			font-family: "PingFang SC";
+			font-size: 13pt;
+			font-style: italic;
+			font-weight: bold
+		}
+
+		h4.ctl {
+			font-family: "Arial Unicode MS";
+			font-size: 13pt;
+			font-style: italic;
+			font-weight: bold
+		}
+
+		pre {
+			color: #000078;
+			font-family: "Liberation Mono", monospace;
+			font-size: 10pt;
+			background: transparent
+		}
+
+		pre.codi {
+			font-size: 8pt;
+			border: 1px solid #dddddd;
+			padding: 0.21cm;
+			background: #eeeeee
+		}
+
+		a:link {
+			color: #000080;
+			text-decoration: underline
+		}
+
+		a:visited {
+			color: #800000;
+			text-decoration: underline
+		}
+	</style>
+</head>
+
+<body lang="es-ES" text="#000078" link="#000080" vlink="#800000" dir="ltr">
+	<div title="header">
+		<p align="right" style="line-height: 100%; margin-bottom: 0cm">
+			PEC 4 - Desarrollo back-end con PHP</p>
+		<p align="right" style="line-height: 100%; margin-bottom: 0.5cm">Robert
+			Buj Gelonch, rbuj@uoc.edu</p>
+	</div>
+	<div id="Taula de continguts1" dir="ltr">
+		<div id="Taula de continguts1_Head" dir="ltr">
+			<p style="line-height: 100%; margin-top: 0.42cm; margin-bottom: 0.21cm; page-break-after: avoid">
+				<font face="Liberation Sans, sans-serif">
+					<font size="4" style="font-size: 16pt"><b>Índice</b></font>
+				</font>
+			</p>
+		</div>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm">
+			<a href="#__RefHeading___Toc3599_1374600117">1. Instalación de Laravel en macOS Sonoma</a>
+		</p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2594_454554628">1.1. php</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2596_454554628">1.2. composer</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2598_454554628">1.3. Proyecto Laravel</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2603_454554628">1.4. Comparación con Drupal</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2740_454554628">2. Sistema de autentificación</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3197_454554628">2.1. Instalación</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3199_454554628">2.2. Autenticación con nombre de usuario y contraseña</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3201_454554628">2.3. Migrar desde cero</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3203_454554628">2.4. Registrar un usuario nuevo</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3205_454554628">2.5. Iniciar la sesión</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3357_454554628">3. Migraciones, modelos e introducción de datos (Tinker)</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3299_454554628">3.1. Migración y modelo para las recetas</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3301_454554628">3.2. Migración y modelo para las categorías</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3303_454554628">3.3. Relación N:M entre categorías y recetas</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3305_454554628">3.4. Realizar la migración a la base de datos</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3288_454554628">3.5. Introducción de datos mediante Tinker</a></p>
+		<p style="line-height: 100%; margin-left: 1.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3290_454554628">3.5.1. Categorías</a></p>
+		<p style="line-height: 100%; margin-left: 1.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3292_454554628">3.5.2. Recetas</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3345_454554628">4. Generar contenido ficticio</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3347_454554628">5. Frontend</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2072_3937871029">5.1. Mostrar una receta mediante su identificador</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2378_3273423651">5.2. Mostrar 5 recetas en la página principal</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3349_454554628">6. API</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2096_3937871029">6.1. API receta</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2098_3937871029">6.2. API recetas</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2100_3937871029">6.3. API categoría</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc4993_3273423651">7. Publicación</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc4995_3273423651">7.1. Base de datos</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc4962_3273423651">7.2. Archivos</a></p>
+		<p style="line-height: 100%; margin-left: 0.5cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc3353_454554628">8. Ventajas e inconvenientes de los entornos utilizados</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2537_1402909275">8.1. Drupal</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2539_1402909275">8.2. PHP</a></p>
+		<p style="line-height: 100%; margin-left: 1cm; margin-bottom: 0cm"><a href="#__RefHeading___Toc2541_1402909275">8.3. Laravel</a></p>
+	</div>
+	<h2 class="western"><a name="__RefHeading___Toc3599_1374600117"></a>1. Instalación de Laravel en macOS Sonoma</h2>
+	<p>Para instalar Laravel se necesita composer y este a su vez php.</p>
+	<h3 class="western"><a name="__RefHeading___Toc2594_454554628"></a>1.1. php</h3>
+	<p>Se instala la versión 8.3 de php mediante <a href="https://www.macports.org/install.php">MacPorts</a>:</p>
+	<pre
+		class="codi">sudo port -qsc install php83 php83-openssl php83-curl php83-iconv php83-sqlite php83-mysql php83-xdebug php_select</pre>
+	<p style="line-height: 100%; margin-bottom: 0cm">
+
+	</p>
+	<p>Se selecciona la versión 8.3 de php como la versión predeterminada:</p>
+	<pre class="codi">sudo port select --set php php83</pre>
+
+	<p>Se establece la configuración de desarrollo de php:</p>
+	<pre class="codi">cd /opt/local/etc/php83
+sudo cp php.ini-development php.ini</pre>
+
+<h3 class="western"><a name="__RefHeading___Toc2596_454554628"></a>1.2. composer</h3>
+	<p>Se instala <a href="https://getcomposer.org/download/">composer</a>
+		en la carpeta bin del usuario:</p>
+	<pre class="codi">mkdir -p ~/bin
+php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
+php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink('composer-setup.php');&quot;
+mv composer.phar ~/bin/composer</pre>
+
+<h3 class="western"><a name="__RefHeading___Toc2598_454554628"></a>1.3. Proyecto Laravel</h3>
+	<p>Se crea el proyecto pec4 de laravel en la carpeta M4.255 del
+		usuario:</p>
+	<pre class="codi">mkdir -p ~/M4.255
+cd ~/M4.255
+~/bin/composer create-project laravel/laravel pec4</pre>
+
+<p>Acceder a la carpeta del proyecto:</p>
+	<pre class="codi">cd ~/M4.255/pec4</pre>
+
+	<p style="page-break-before: always">Cambiar SGBD a MySQL:</p>
+	<pre class="codi">sed -i '' &quot;s/DB_CONNECTION=sqlite/DB_CONNECTION=mysql/&quot; .env</pre>
+
+	<p>Cambiar datos de autentificación para la conexión a MySQL:</p>
+	<pre class="codi">sed -i '' &quot;s/^# DB_HOST=127.0.0.1/DB_HOST=127.0.0.1/&quot; .env
+sed -i '' &quot;s/^# DB_PORT=3306/DB_PORT=3306/&quot; .env
+sed -i '' &quot;s/^# DB_DATABASE=laravel/DB_DATABASE=laravel/&quot; .env
+sed -i '' &quot;s/^# DB_USERNAME=root/DB_USERNAME=root/&quot; .env
+sed -i '' &quot;s/^# DB_PASSWORD=/DB_PASSWORD=password/&quot; .env</pre>
+
+<p>Cambiar el nombre de la tabla users a users_pec4:</p>
+	<pre class="codi">mv database/migrations/0001_01_01_000000_create_users_table.php \
+	database/migrations/0001_01_01_000000_create_users_pec4_table.php
+sed -i '' &quot;s/'users'/'users_pec4'/g&quot; database/migrations/0001_01_01_000000_create_users_pec4_table.php</pre>
+
+<p>Cambiar el nombre de la tabla en la vista User.</p>
+	<pre class="codi">sed -i '' '/use HasFactory, Notifiable;/a\
+    protected $table = '&quot;'&quot;'users_pec4'&quot;'&quot;';' app/Models/User.php</pre>
+
+		<p>Migrar base de datos:</p>
+	<pre class="codi">php artisan migrate
+
+   WARN  The database 'laravel' does not exist on the 'mysql' connection.  
+
+ ┌ Would you like to create it? ────────────────────────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘</pre>
+
+ <p>En caso de producirse un error de autenticación: El complemento
+		predeterminado de MySQL 8 es auth_socket. y la mayoría de las
+		aplicaciones esperarán iniciar sesión utilizando una contraseña.</p>
+	<pre class="codi">...
+  SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client [caching_sha2_password] (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'laravel' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+...</pre>
+
+<p>Tan solo se tiene que ejecutar la siguiente consulta mediante
+		MySQL WorkBench:</p>
+	<pre class="codi">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';</pre>
+
+	<p>Eliminar base de datos sqlite:</p>
+	<pre class="codi">rm -f database/database.sqlite</pre>
+
+	<p style="page-break-before: always">Iniciar la aplicación:</p>
+	<pre class="codi">php artisan serve</pre>
+
+	<p>Abrir el sitio web <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a>
+		con el navegador:</p>
+	<p style="line-height: 100%; margin-bottom: 0cm"><img src="rbuj_pac4_htm_f36f549e.webp" name="Imatge1" align="left"
+			width="653" height="521">
+		<br clear="left" />
+		</img>
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc2603_454554628"></a>1.4. Comparación con Drupal</h3>
+	<p>En ambos casos se utiliza <i><b>C</b></i><i><b>omposer</b></i>
+		para la instalación, pero en <i><b>D</b></i><i><b>rupal</b></i>
+		después de la instalación mediante <i><b>C</b></i><i><b>omposer</b></i>
+		se finaliza la instalación en el navegador introduciendo los
+		parámetros de la configuración del sitio web, en <i><b>L</b></i><i><b>aravel</b></i>
+		la configuración se realiza en el archivo .env.</p>
+	<h2 class="western"><a name="__RefHeading___Toc2740_454554628"></a>2. Sistema de autentificación</h2>
+	<h3 class="western"><a name="__RefHeading___Toc3197_454554628"></a>2.1. Instalación</h3>
+	<p>Acceder a la carpeta del proyecto:</p>
+	<pre class="codi">cd ~/M4.255/pec4</pre>
+	<p style="page-break-before: always">
+		Instalar <a href="https://laravel.com/docs/11.x/starter-kits#breeze-and-blade">Lavarel
+			Breeze</a> mediante Composer:</p>
+	<pre class="codi">~/bin/composer require laravel/breeze --dev</pre>
+
+	<p>Instalación de la pila de Breeze:</p>
+	<pre class="codi">php artisan breeze:install
+
+ ┌ Which Breeze stack would you like to install? ───────────────┐
+ │ Blade with Alpine                                            │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like dark mode support? ───────────────────────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Which testing framework do you prefer? ──────────────────────┐
+ │ PHPUnit                                                      │
+ └──────────────────────────────────────────────────────────────┘</pre>
+
+ <p>El menú de autenticación se ha añadido a la página principal.</p>
+	<p style="line-height: 100%; margin-bottom: 0cm"><img src="rbuj_pac4_htm_72b62e22.webp" name="Imatge2" align="left"
+			width="490" height="391">
+		<br clear="left" />
+		</img>
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc3199_454554628"></a>2.2. Autenticación con nombre de usuario y contraseña</h3>
+	<p>En la migración de la tabla users_pec4, se añade la columna
+		username como valor único, y se modifican las columnas email y name
+		para que puedan almacenar valores nulos.</p>
+	<pre class="codi">diff --git a/database/migrations/0001_01_01_000000_create_users_pec4_table.php b/database/migrations/0001_01_01_000000_create_users_pec4_table.php
+index ca220e2..bc61572 100644
+--- a/database/migrations/0001_01_01_000000_create_users_pec4_table.php
++++ b/database/migrations/0001_01_01_000000_create_users_pec4_table.php
+@@ -13,10 +13,11 @@ public function up(): void
+     {
+         Schema::create('users_pec4', function (Blueprint $table) {
+             $table-&gt;id();
+-            $table-&gt;string('name');
+-            $table-&gt;string('email')-&gt;unique();
+-            $table-&gt;timestamp('email_verified_at')-&gt;nullable();
++            $table-&gt;string('username')-&gt;unique();
+             $table-&gt;string('password');
++            $table-&gt;string('name')-&gt;nullable();
++            $table-&gt;string('email')-&gt;nullable();
++            $table-&gt;timestamp('email_verified_at')-&gt;nullable();
+             $table-&gt;rememberToken();
+             $table-&gt;timestamps();
+         });</pre>
+
+				 <p>Se añade username al modelo:</p>
+	<pre class="codi">diff --git a/app/Models/User.php b/app/Models/User.php
+index 75d527f..dfbd83c 100644
+--- a/app/Models/User.php
++++ b/app/Models/User.php
+@@ -17,9 +17,10 @@ class User extends Authenticatable
+      * @var array&lt;int, string&gt;
+      */
+     protected $fillable = [
++        'username',
++        'password',
+         'name',
+         'email',
+-        'password',
+     ];
+ 
+     /**</pre>
+
+		 <p>En el formulario de registro se añade el campo username y se
+		eliminan los campos name y email.</p>
+	<pre class="codi">diff --git a/resources/views/auth/register.blade.php b/resources/views/auth/register.blade.php
+index a857242..40b288f 100644
+--- a/resources/views/auth/register.blade.php
++++ b/resources/views/auth/register.blade.php
+@@ -2,18 +2,11 @@
+     &lt;form method=&quot;POST&quot; action=&quot;{{ route('register') }}&quot;&gt;
+         @csrf
+ 
+-        &lt;!-- Name --&gt;
+-        &lt;div&gt;
+-            &lt;x-input-label for=&quot;name&quot; :value=&quot;__('Name')&quot; /&gt;
+-            &lt;x-text-input id=&quot;name&quot; class=&quot;block mt-1 w-full&quot; type=&quot;text&quot; name=&quot;name&quot; :value=&quot;old('name')&quot; required autofocus autocomplete=&quot;name&quot; /&gt;
+-            &lt;x-input-error :messages=&quot;$errors-&gt;get('name')&quot; class=&quot;mt-2&quot; /&gt;
+-        &lt;/div&gt;
+-
+-        &lt;!-- Email Address --&gt;
++        &lt;!-- Username --&gt;
+         &lt;div class=&quot;mt-4&quot;&gt;
+-            &lt;x-input-label for=&quot;email&quot; :value=&quot;__('Email')&quot; /&gt;
+-            &lt;x-text-input id=&quot;email&quot; class=&quot;block mt-1 w-full&quot; type=&quot;email&quot; name=&quot;email&quot; :value=&quot;old('email')&quot; required autocomplete=&quot;username&quot; /&gt;
+-            &lt;x-input-error :messages=&quot;$errors-&gt;get('email')&quot; class=&quot;mt-2&quot; /&gt;
++            &lt;x-input-label for=&quot;username&quot; :value=&quot;__('Username')&quot; /&gt;
++            &lt;x-text-input id=&quot;username&quot; class=&quot;block mt-1 w-full&quot; type=&quot;text&quot; name=&quot;username&quot; :value=&quot;old('username')&quot; required autocomplete=&quot;username&quot; /&gt;
++            &lt;x-input-error :messages=&quot;$errors-&gt;get('username')&quot; class=&quot;mt-2&quot; /&gt;
+         &lt;/div&gt;
+ 
+         &lt;!-- Password --&gt;</pre>
+
+				 <p>En el controlador Auth/RegisteredUserController se eliminan name y
+		email de la validación de la petición, y se añade username. En la
+		creación del usuario se sustituye email por username.</p>
+	<pre class="codi">diff --git a/app/Http/Controllers/Auth/RegisteredUserController.php b/app/Http/Controllers/Auth/RegisteredUserController.php
+index 0739e2e..9148525 100644
+--- a/app/Http/Controllers/Auth/RegisteredUserController.php
++++ b/app/Http/Controllers/Auth/RegisteredUserController.php
+@@ -30,14 +30,12 @@ public function create(): View
+     public function store(Request $request): RedirectResponse
+     {
+         $request-&gt;validate([
+-            'name' =&gt; ['required', 'string', 'max:255'],
+-            'email' =&gt; ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
++            'username' =&gt; ['required', 'string', 'lowercase', 'max:255', 'unique:'.User::class],
+             'password' =&gt; ['required', 'confirmed', Rules\Password::defaults()],
+         ]);
+ 
+         $user = User::create([
+-            'name' =&gt; $request-&gt;name,
+-            'email' =&gt; $request-&gt;email,
++            'username' =&gt; $request-&gt;username,
+             'password' =&gt; Hash::make($request-&gt;password),
+         ]);
+ </pre>
+
+ <p>En el formulario de autenticación se sustituye email por
+		username:</p>
+	<pre class="codi">diff --git a/resources/views/auth/login.blade.php b/resources/views/auth/login.blade.php
+index 78b684f..0938936 100644
+--- a/resources/views/auth/login.blade.php
++++ b/resources/views/auth/login.blade.php
+@@ -5,11 +5,11 @@
+     &lt;form method=&quot;POST&quot; action=&quot;{{ route('login') }}&quot;&gt;
+         @csrf
+ 
+-        &lt;!-- Email Address --&gt;
++        &lt;!-- Username --&gt;
+         &lt;div&gt;
+-            &lt;x-input-label for=&quot;email&quot; :value=&quot;__('Email')&quot; /&gt;
+-            &lt;x-text-input id=&quot;email&quot; class=&quot;block mt-1 w-full&quot; type=&quot;email&quot; name=&quot;email&quot; :value=&quot;old('email')&quot; required autofocus autocomplete=&quot;username&quot; /&gt;
+-            &lt;x-input-error :messages=&quot;$errors-&gt;get('email')&quot; class=&quot;mt-2&quot; /&gt;
++            &lt;x-input-label for=&quot;username&quot; :value=&quot;__('Username')&quot; /&gt;
++            &lt;x-text-input id=&quot;username&quot; class=&quot;block mt-1 w-full&quot; type=&quot;text&quot; name=&quot;username&quot; :value=&quot;old('username')&quot; required autofocus autocomplete=&quot;username&quot; /&gt;
++            &lt;x-input-error :messages=&quot;$errors-&gt;get('username')&quot; class=&quot;mt-2&quot; /&gt;
+         &lt;/div&gt;
+ 
+         &lt;!-- Password --&gt;</pre>
+
+				 <p>En la autenticación se utiliza username en lugar de email.</p>
+	<pre class="codi">diff --git a/app/Http/Requests/Auth/LoginRequest.php b/app/Http/Requests/Auth/LoginRequest.php
+index 2b92f65..3fc3d9d 100644
+--- a/app/Http/Requests/Auth/LoginRequest.php
++++ b/app/Http/Requests/Auth/LoginRequest.php
+@@ -27,7 +27,7 @@ public function authorize(): bool
+     public function rules(): array
+     {
+         return [
+-            'email' =&gt; ['required', 'string', 'email'],
++            'username' =&gt; ['required', 'string'],
+             'password' =&gt; ['required', 'string'],
+         ];
+     }
+@@ -41,11 +41,11 @@ public function authenticate(): void
+     {
+         $this-&gt;ensureIsNotRateLimited();
+ 
+-        if (! Auth::attempt($this-&gt;only('email', 'password'), $this-&gt;boolean('remember'))) {
++        if (! Auth::attempt($this-&gt;only('username', 'password'), $this-&gt;boolean('remember'))) {
+             RateLimiter::hit($this-&gt;throttleKey());
+ 
+             throw ValidationException::withMessages([
+-                'email' =&gt; trans('auth.failed'),
++                'username' =&gt; trans('auth.failed'),
+             ]);
+         }
+ 
+@@ -80,6 +80,6 @@ public function ensureIsNotRateLimited(): void
+      */
+     public function throttleKey(): string
+     {
+-        return Str::transliterate(Str::lower($this-&gt;string('email')).'|'.$this-&gt;ip());
++        return Str::transliterate(Str::lower($this-&gt;string('username')).'|'.$this-&gt;ip());
+     }
+ }</pre>
+
+ <p>Una vez se inicia la sesión se muestra el mensaje de bienvenida
+		en el tablero.</p>
+	<pre class="codi">diff --git a/resources/views/dashboard.blade.php b/resources/views/dashboard.blade.php
+index 66028f2..1797afd 100644
+--- a/resources/views/dashboard.blade.php
++++ b/resources/views/dashboard.blade.php
+@@ -9,7 +9,7 @@
+         &lt;div class=&quot;max-w-7xl mx-auto sm:px-6 lg:px-8&quot;&gt;
+             &lt;div class=&quot;bg-white overflow-hidden shadow-sm sm:rounded-lg&quot;&gt;
+                 &lt;div class=&quot;p-6 text-gray-900&quot;&gt;
+-                    {{ __(&quot;You're logged in!&quot;) }}
++                    Bienvenido/a {{ Auth::user()-&gt;username }}!
+                 &lt;/div&gt;
+             &lt;/div&gt;
+         &lt;/div&gt;</pre>
+
+	<p>En el menú desplegable se muestra username en lugar de name:</p>
+	<pre class="codi">diff --git a/resources/views/layouts/navigation.blade.php b/resources/views/layouts/navigation.blade.php
+index c2d3a65..cbf7e8f 100644
+--- a/resources/views/layouts/navigation.blade.php
++++ b/resources/views/layouts/navigation.blade.php
+@@ -23,7 +23,7 @@
+                 &lt;x-dropdown align=&quot;right&quot; width=&quot;48&quot;&gt;
+                     &lt;x-slot name=&quot;trigger&quot;&gt;
+                         &lt;button class=&quot;inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150&quot;&gt;
+-                            &lt;div&gt;{{ Auth::user()-&gt;name }}&lt;/div&gt;
++                            &lt;div&gt;{{ Auth::user()-&gt;username }}&lt;/div&gt;
+ 
+                             &lt;div class=&quot;ms-1&quot;&gt;
+                                 &lt;svg class=&quot;fill-current h-4 w-4&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+</pre>
+
+	<h3 class="western"><a name="__RefHeading___Toc3201_454554628"></a>2.3. Migrar desde cero</h3>
+	<p>Se crean de nuevo de cero las tablas:</p>
+	<pre class="codi">php artisan migrate:fresh</pre>
+
+	<h3 class="western"><a name="__RefHeading___Toc3203_454554628"></a>2.4. Registrar un usuario nuevo</h3>
+	<p>Nombre de usuario: admin</p>
+	<p>Contraseña: @dmin_2024</p>
+	<p><img src="rbuj_pac4_htm_2ef379ab.webp" name="Imatge3" align="left" width="368" height="382">
+		<br clear="left" />
+		</img>
+		<br />
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc3205_454554628"></a>2.5.Iniciar
+		la sesión</h3>
+	<p><img src="rbuj_pac4_htm_13065d73.webp" name="Imatge4" align="left" width="276" height="287">
+		<br clear="left" />
+		</img>
+		<img src="rbuj_pac4_htm_83a5bd9e.webp" name="Imatge5" align="left" width="276" height="287">
+		<br clear="left" />
+		</img>
+
+	</p>
+
+	<h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3357_454554628"></a>
+		3. Migraciones, modelos e introducción de datos (Tinker)
+	</h2>
+	<h3 class="western"><a name="__RefHeading___Toc3299_454554628"></a>3.1. Migración y modelo para las recetas</h3>
+	<p>Crear el modelo <font color="#000080"><i><span style="font-weight: normal">Recipe</span></i></font>
+		con la migración</p>
+	<pre class="codi">php artisan make:model Recipe -m
+
+   INFO  Model [app/Models/Recipe.php] created successfully.  
+
+   INFO  Migration [database/migrations/2024_06_18_081823_create_recipes_table.php] created successfully.  </pre>
+
+	<p>Añadir las columnas a la migración:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">database/migrations/2024_06_18_081823_create_recipes_table.php</font>
+	</p>
+	<pre class="codi">Schema::create('recipes', function (Blueprint $table) {
+    $table-&gt;id();
+    $table-&gt;string('name', 255);
+    $table-&gt;date('posted_at');
+    $table-&gt;enum('level', array('bajo', 'medio', 'alto'));
+    $table-&gt;smallInteger('preparation_minutes');
+    $table-&gt;string('ingredients');
+    $table-&gt;string('author');
+    $table-&gt;longText('instructions');
+    $table-&gt;string('picture');
+});</pre>
+
+	<p>En el modelo, se añade la propiedad <i>fillable</i> para
+		introducir datos de forma masiva:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Models/Recipe.php</font>
+	</p>
+	<pre class="codi">protected $fillable = [
+    'name',
+    'posted_at',
+    'level',
+    'preparation_minutes',
+    'ingredients',
+    'author',
+    'instructions',
+    'picture'
+];</pre>
+
+	<p>y se establece la propiedad $timestamps a false porque no se
+		utilizan las columnas <i>created</i><i>_at </i>ni <i>updated</i><i>_at</i>:</p>
+	<pre class="codi">public $timestamps = false;</pre>
+
+	<h3 class="western"><a name="__RefHeading___Toc3301_454554628"></a>3.2. Migración y modelo para las categorías</h3>
+	<p style="font-style: normal">Crear el modelo <font color="#000080"><i><span
+					style="font-weight: normal">Category</span></i></font>
+		con la migración</p>
+	<pre class="codi">php artisan make:model Category -m
+
+   INFO  Model [app/Models/Category.php] created successfully.  
+
+   INFO  Migration [database/migrations/2024_06_18_082229_create_categories_table.php] created successfully.  </pre>
+
+	<p>Añadir las columnas a la migración:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">database/migrations/2024_06_18_082229_create_categories_table.php</font>
+	</p>
+	<pre class="codi">Schema::create('category', function (Blueprint $table) {
+    $table-&gt;id();
+    $table-&gt;string('name');
+});</pre>
+
+	<p>La tabla <i>category</i> no contiene los <i>timestamps</i>:
+		<i>created</i><i>_at</i> ni <i>updated</i><i>_at</i>, en el modelo
+		establecemos la propiedad $timestamps a false:
+	</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Models/Category.php</font>
+	</p>
+	<pre class="codi">public $timestamps = false;</pre>
+
+	<h3 class="western"><a name="__RefHeading___Toc3303_454554628"></a>3.3. Relación N:M entre categorías y recetas</h3>
+	<p>Crear la migración de la “pivot table” <font color="#000080"><i><span
+					style="font-weight: normal">category_recipe</span></i></font>
+	</p>
+	<pre class="codi">php artisan make:migration create_category_recipe_table --create=category_recipe</pre>
+
+	<p>Añadir las columnas a la migración:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">database/migrations/2024_06_18_083123_create_category_recipe_table.php</font>
+	</p>
+	<pre class="codi">Schema::create('recipe_category', function (Blueprint $table) {
+    $table-&gt;id();
+    $table-&gt;unsignedBigInteger('recipe_id');
+    $table-&gt;unsignedBigInteger('category_id');
+    $table-&gt;foreign('recipe_id')-&gt;references('id')-&gt;on('recipes');
+    $table-&gt;foreign('category_id')-&gt;references('id')-&gt;on('categories');
+});</pre>
+
+	<p>Modificar el <font color="#000080"><span style="font-style: normal"><span style="font-weight: normal">modelo
+				</span></span></font>
+		<font color="#000080"><i><span style="font-weight: normal">Recipe</span></i></font>
+	</p>
+	<p style="font-weight: normal">
+		<font color="#000080">
+			<font size="1" style="font-size: 8pt"><i>app/Models/Recipe.php</i></font>
+		</font>
+	</p>
+	<pre class="codi">public function categories()
+{
+    return $this-&gt;belongsToMany(Category::class);
+}</pre>
+
+	<p>Modificar el <font color="#000080"><span style="font-style: normal"><span style="font-weight: normal">modelo
+				</span></span></font>
+		<font color="#000080"><i><span style="font-weight: normal">Category</span></i></font>
+	</p>
+	<p style="font-weight: normal">
+		<font color="#000080">
+			<font size="1" style="font-size: 8pt"><i>app/Models/Category.php</i></font>
+		</font>
+	</p>
+	<pre class="codi">public function recipes()
+{
+    return $this-&gt;belongsToMany(Recipe::class);
+}</pre>
+
+	<h3 class="western"><a name="__RefHeading___Toc3305_454554628"></a>3.4. Realizar la migración a la base de datos</h3>
+	<p>Realizar la migración:</p>
+	<pre class="codi">php artisan migrate</pre>
+	<h3 class="western">
+		<a name="__RefHeading___Toc3288_454554628"></a>3.5. Introducción de datos mediante Tinker
+	</h3>
+	<p>Iniciar Tinker:</p>
+	<pre class="codi">php artisan tinker</pre>
+
+	<h4 class="western"><a name="__RefHeading___Toc3290_454554628"></a>3.5.1. Categorías</h4>
+	<p>Utilizar el modelo Category</p>
+	<pre class="codi">use App\Models\Category;</pre>
+
+	<p>Crear y almacenar las categorías japonesa, italiana, catalana,
+		vegana y tradicional:</p>
+	<pre class="codi">$c = new Category();
+$c-&gt;name = 'japonesa';
+$c-&gt;save();
+$c = new Category();
+$c-&gt;name = 'italiana';
+$c-&gt;save();
+$c = new Category();
+$c-&gt;name = 'catalana';
+$c-&gt;save();
+$c = new Category();
+$c-&gt;name = 'vegana';
+$c-&gt;save();
+$c = new Category();
+$c-&gt;name = 'tradicional';
+$c-&gt;save();</pre>
+<img src="rbuj_pac4_htm_cfba5f03.webp" name="Imatge6" align="left" width="505" height="369">
+  <br clear="left"/>
+</img>
+	<h4 class="western" style="page-break-before: always">
+		<a name="__RefHeading___Toc3292_454554628"></a>3.5.2. Recetas
+	</h4>
+	<p>Utilizar el modelo Recipe</p>
+	<pre class="codi">use App\Models\Recipe;</pre>
+
+	<p>Crear la receta 1: Makisushi de salmón y atún</p>
+	<pre class="codi">$recipe = Recipe::create([
+'name' =&gt; 'Makisushi de salmón y atún',
+'posted_at' =&gt; '2024-06-18 08:52:47', 
+'level' =&gt; 'bajo',
+'preparation_minutes' =&gt; 15,
+'ingredients' =&gt; 'arroz',
+'author' =&gt; 'Keith Richards',
+'instructions' =&gt; '&lt;p&gt;Deja descongelar el atún y el salmón en la nevera en un recipiente con rejilla.&lt;/p&gt;&lt;p&gt;Limpia el arroz 3 veces y escúrrelo hasta que el agua salga limpia. Ponlo en una cazuela y añádele el doble de su volumen de agua. Hiérvelo a fuego fuerte durante 1 minuto y después continúa la cocción a fuego muy bajo y tapado durante 10 minutos.&lt;/p&gt;&lt;p&gt;Pasado este tiempo, sácalo del fuego y déjalo reposar 10 minutos más aún tapado. Finalmente, añade el vinagre, la sal, el azúcar y un poco de wasabi, y deja que se enfríe antes de utilizarlo.&lt;/p&gt;&lt;p&gt;Para hacer el makisushi: corta el salmón y el atún a tiras largas; corta también el aguacate y el pepino a tiras finas y largas.&lt;/p&gt;&lt;p&gt;Pon una lámina de nori encima de la alfombrita de sushi, esparce por encima un poco de arroz y añádele el salmón o el atún y el aguacate o el pepino, haciendo la combinación que más te guste. Con la ayuda de la alfombrita, envuelve el nori como si se tratara de un canelón y déjalo en la nevera un rato. Después, córtalo en 6 partes.&lt;/p&gt;&lt;p&gt;Sirve el plato y acompáñalo con salsa de soja, wasabi y el jengibre en conserva.&lt;/p&gt;',
+'picture' =&gt; 'img/picture1.jpeg'
+]);</pre>
+
+	<p>Añadir las categorías (japonesa : 1, tradicional : 5) a la
+		receta</p>
+	<pre class="codi">$recipe-&gt;categories()-&gt;attach([1, 5]);</pre>
+
+	<p>Crear la receta 2: Fideuá de calamares en romesco</p>
+	<pre class="codi">$recipe = Recipe::create([
+'name' =&gt; 'Fideuá de calamares en romesco',
+'posted_at' =&gt; '2024-06-19 08:52:47', 
+'level' =&gt; 'medio',
+'preparation_minutes' =&gt; 60,
+'ingredients' =&gt; 'fideos',
+'author' =&gt; 'Mick Jagger',
+'instructions' =&gt; '&lt;p&gt;Calienta tu horno a 200-220ºC. Mientras tanto calienta una paellera o sartén apta para horno a fuego fuerte. Saltea el CALAMAR PATAGÓNICO LIMPIO TROCEADO con un chorrito de aceite de oliva y dóralos 1 minuto. Reserva.&lt;/p&gt;&lt;p&gt;En la misma sartén, a fuego fuerte, añade el PISTO DE VERDURAS directamente congelado con un chorrito de aceite de oliva (sal no). Saltea a fuego fuerte 2-3 minutos y añade el sofrito. Baja el fuego y deja reducir hasta evaporar toda el agua.&lt;/p&gt;&lt;p&gt;Aún a fuego bajo, añade los fideos y dóralos. Añade un par de cucharadas más de aceite de oliva (2 minutos). Mientras tanto, mezcla el sobre de FUMET CONCENTRADO DE PESCADO DE ROCA con 1 vaso de agua (250 ml.) y llévalo a ebullición.&lt;/p&gt;&lt;p&gt;Añade de nuevo el CALAMAR PATAGÓNICO TROCEADO a la paellera y sube el fuego de nuevo. Moja con el FUMET DE PESCADO, reparte bien y lleva al horno (6-8 minutos) hasta que se haya consumido todo el caldo. Retira, deja reposar 1 minuto y sirve con una cucharada de salsa romesco.&lt;/p&gt;',
+'picture' =&gt; 'img/picture2.jpeg'
+]);</pre>
+
+	<p>Añadir categorías (catalana : 3, tradicional : 5) a la receta</p>
+	<pre class="codi">$recipe-&gt;categories()-&gt;attach([3, 5]);</pre>
+
+	<p> <img src="rbuj_pac4_htm_c848f4ac.webp" name="Imatge7" align="left" width="505" height="453">
+		<br clear="left" />
+		</img>
+
+	</p>
+	<p><img src="rbuj_pac4_htm_e970a211.webp" name="Imatge8" align="left" width="379" height="277">
+		<br clear="left" />
+		</img>
+
+	</p>
+	<h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3345_454554628"></a>
+		4. Generar contenido ficticio</h2>
+	<p>Generar el seeder y el factory:</p>
+	<pre class="codi">php artisan make:seeder RecipeSeeder
+php artisan make:factory RecipeFactory</pre>
+
+	<p>Añadir la definición a RecipeFactory:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">database/factories/RecipeFactory.php</font>
+	</p>
+	<pre class="codi">public function definition(): array
+{
+    return [
+        'name' =&gt; rtrim(fake()-&gt;sentence(rand(3, 8)), '.'),
+        'posted_at' =&gt; fake()-&gt;dateTimeBetween($startDate = '-6 months', $endDate = 'now')-&gt;format('Y-m-d H:i:s'),
+        'level' =&gt; fake()-&gt;randomElement(['bajo', 'medio', 'alto']),
+        'preparation_minutes' =&gt; fake()-&gt;numberBetween(5, 120),
+        'ingredients' =&gt; fake()-&gt;word(),
+        'author' =&gt; fake()-&gt;name,
+        'instructions' =&gt; implode('&lt;br&gt;', fake()-&gt;paragraphs(rand(2, 6))),
+        'picture' =&gt; fake()-&gt;imageUrl(640, 480, 'receta')
+    ];
+}</pre>
+
+	<p>Crear 100 recetas en RecipeSeeder:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">database/seeders/RecipeSeeder.php</font>
+	</p>
+	<pre class="codi">public function run(): void
+{
+    $numCategories = 2;
+
+    // create 100 randon recipes
+    $recipes = Recipe::factory(100)
+        -&gt;create();
+
+    // associate each generated recipes with 2 categories
+    foreach ($recipes as $recipe) {
+        $categories = Category::inRandomOrder()-&gt;limit($numCategories)-&gt;pluck('id');
+        $recipe-&gt;categories()-&gt;attach($categories);
+    }
+}</pre>
+
+	<p>Ejecutar RecipeSeeder</p>
+	<pre class="codi">php artisan db:seed --class=RecipeSeeder</pre>
+
+	<h2 class="western"><a name="__RefHeading___Toc3347_454554628"></a>5. Frontend</h2>
+	<h3 class="western"><a name="__RefHeading___Toc2072_3937871029"></a>5.1. Mostrar una receta mediante su identificador</h3>
+	<p>Modificar el archivo de enrutamiento</p>
+	<p>
+		<font size="1" style="font-size: 8pt">routes/web.php</font>
+	</p>
+	<pre class="codi">Route::get('/recipe/{id}', [RecipeController::class, 'show']);</pre>
+
+	<p style="page-break-before: always">Crear el controlador
+		RecipeController:</p>
+	<pre class="codi">php artisan make:controller RecipeController</pre>
+
+	<p>Añadir el siguiente código al controlador</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Http/Controllers/RecipeController.php</font>
+	</p>
+	<pre class="codi">/**
+ * Show the recipe for a given id.
+ */
+public function show(string $id): View
+{
+    return view('recipe.content', [
+        'recipe' =&gt; Recipe::findOrFail($id)
+    ]);
+}</pre>
+
+	<p>Crear la vista recipe.content</p>
+	<pre class="codi">php artisan make:view recipe.content</pre>
+
+	<p>Mostrar las columnas en la vista recipe.content</p>
+	<p>
+		<font size="1" style="font-size: 8pt">resources/views/recipe/content.blade.php</font>
+	</p>
+	<pre class="codi">{{ $recipe['name'] }}
+{{ \Carbon\Carbon::parse($recipe['posted_at'])-&gt;format('d/m/Y') }}
+{{ $recipe['level'] }}
+{{ $recipe['preparation_minutes'] }}
+{{ $recipe['ingredients'] }}
+{{ $recipe['author'] }}
+&lt;img src=&quot;{{ Str::startsWith($recipe['picture'], 'http') ? $recipe['picture'] : asset($recipe['picture']) }}&quot; alt=&quot;&quot;&gt;
+{!! $recipe['instructions'] !!}</pre>
+	<p>
+		<img src="rbuj_pac4_htm_c8a2767f.webp" name="Imatge9" align="left" width="318" height="362">
+		<br clear="left" />
+		</img>
+		<br />
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc2378_3273423651"></a><a
+			name="Còpia de __RefHeading___Toc2072_3937871029 1"></a>
+		5.2. Mostrar 5 recetas en la página principal</h3>
+	<p>Ruta:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">routes/web.php</font>
+	</p>
+	<pre class="codi">Route::get('/', [RecipeController::class, 'index'])-&gt;name('home');</pre>
+
+	<p>Añadir el método index al controlador:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Http/Controllers/RecipeController.php</font>
+	</p>
+	<pre class="codi">/**
+* Show 5 recipes: 2 fixed + 3 random
+*/
+public function index(): View
+{
+  $fixed = [1, 2];
+  $random = Recipe::select('id')-&gt;where('id', '&gt;', 2)-&gt;orderByRaw('RAND()')-&gt;take(3)-&gt;pluck('id')-&gt;toArray();
+  $array = array_merge($fixed, $random);
+  return view('home', [
+    'recipes' =&gt; Recipe::find($array)
+  ]);
+}</pre>
+
+<p>Modificar la vista para mostrar las recetas:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">resources/views/home.blade.php</font>
+	</p>
+	<pre class="codi">@foreach ($recipes as $recipe)
+&lt;a href=&quot;{{ asset('recipe/'.$recipe['id']) }}&quot; class=&quot;group&quot;&gt;
+  &lt;img src=&quot;{{ Str::startsWith($recipe['picture'], 'http') ? $recipe['picture'] : asset($recipe['picture']) }}&quot;&gt;
+  &lt;h3&gt;{{ $recipe['name'] }}&lt;/h3&gt;
+  &lt;p&gt;Categorías: {{ $recipe-&gt;categories()-&gt;orderBy('name')-&gt;pluck('name')-&gt;implode(', ') }}&lt;/p&gt;
+  &lt;p&gt;Nivel de dificultad: {{ $recipe['level'] }}&lt;/p&gt;
+  &lt;p&gt;Fecha de publicación: {{ \Carbon\Carbon::parse($recipe['posted_at'])-&gt;format('d/m/Y') }} &lt;/p&gt;
+&lt;/a&gt;
+@endforeach</pre>
+	<p style="line-height: 100%; margin-bottom: 0cm">
+		<img src="rbuj_pac4_htm_98a6b440.webp" name="Imatge10" align="left" width="283" height="272">
+		<br clear="left" />
+		</img>
+		<br />
+
+	</p>
+
+	<h2 class="western"><a name="__RefHeading___Toc3349_454554628"></a>6. API</h2>
+	<h3 class="western"><a name="__RefHeading___Toc2096_3937871029"></a>6.1. API receta</h3>
+	<p>Enrutamiento:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">routes/web.php</font>
+	</p>
+	<pre class="codi">Route::get('/api/recipe/{id}', [RecipeController::class, 'apiRecipe']);</pre>
+
+	<p>Controlador:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Http/Controllers/RecipeController.php</font>
+	</p>
+	<pre class="codi">public function apiRecipe(string $id)
+{
+    $recipe = Recipe::find($id);
+    return response()-&gt;json($recipe, !empty($recipe) ? 200 : 400);
+}</pre>
+	<p style="line-height: 100%; margin-bottom: 0cm">
+		<img src="rbuj_pac4_htm_dad45b04.webp" name="Imatge12" align="left" width="320" height="225">
+		<br clear="left" />
+		</img>
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc2098_3937871029"></a>6.2. API recetas</h3>
+	<p>Enrutamiento:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">routes/web.php</font>
+	</p>
+	<pre class="codi">Route::get('/api/recipes/{page}', [RecipeController::class, 'apiRecipes']);</pre>
+
+	<p>Controlador:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Http/Controllers/RecipeController.php</font>
+	</p>
+	<pre class="codi">public function apiRecipes(string $page)
+{
+    $recipes = Recipe::paginate($perPage = 10, $columns = ['id','name', 'posted_at'], $pageName = 'page', $page);
+    if (!empty($recipes)) {
+        $data = $recipes-&gt;toArray()['data'];
+        return response()-&gt;json($data, 200);
+    }
+    return response()-&gt;json([], 400);
+}</pre>
+
+	<p style="line-height: 100%; margin-bottom: 0cm; page-break-before: always">
+		<img src="rbuj_pac4_htm_b2d736bf.webp" name="Imatge13" align="left" width="349" height="345">
+		<br clear="left" />
+		</img>
+		<br />
+
+	</p>
+	<h3 class="western"><a name="__RefHeading___Toc2100_3937871029"></a>6.3. API categoría</h3>
+	<p>Enrutamiento:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">routes/web.php</font>
+	</p>
+	<pre class="codi">Route::get('/api/category/{id}/{page}', [RecipeController::class, 'apiCategory']);</pre>
+
+	<p>Controlador:</p>
+	<p>
+		<font size="1" style="font-size: 8pt">app/Http/Controllers/RecipeController.php</font>
+	</p>
+	<pre class="codi">public function apiCategory(string $id, string $page)
+{
+    $recipes = Recipe::whereHas('categories', fn ($query) =&gt; $query-&gt;where('category_id', $id))-&gt;paginate($perPage = 10, $columns = ['id', 'name', 'posted_at'], $pageName = 'page', $page);
+    if (!empty($recipes)) {
+        $data = $recipes-&gt;toArray()['data'];
+        return response()-&gt;json($data, 200);
+    }
+    return response()-&gt;json([], 400);
+}</pre>
+<img src="rbuj_pac4_htm_10cae642.webp" name="Imatge11" align="left" width="320" height="225">
+  <br clear="left"/>
+</img>
+	<h2 class="western"><a name="__RefHeading___Toc4993_3273423651"></a>7. Publicación</h2>
+	<h3 class="western"><a name="__RefHeading___Toc4995_3273423651"></a>7.1. Base de datos</h3>
+	<p>Se exporta la base de datos mediante MySQL Workbench:</p>
+	<p style="line-height: 100%; margin-bottom: 0cm"><img src="rbuj_pac4_htm_31fd47d8.webp" name="Imatge14" align="left"
+			width="416" height="288">
+		<br clear="left" />
+		</img>
+	</p>
+	<p>Se importa la base de datos mediante la página de phpMyAdmin:</p>
+	<img src="rbuj_pac4_htm_df55402a.webp" name="Imatge15" align="left" width="485" height="448">
+		<br clear="left" />
+		</img>
+	<h3 class="western"><a name="__RefHeading___Toc4962_3273423651"></a>7.2. Archivos</h3>
+	<p>Construcción de node.js</p>
+	<pre class="codi">npm run build</pre>
+
+	<p>Se comprime el directorio de la práctica:</p>
+	<pre class="codi">zip pec4.zip -r pec4</pre>
+
+	<p>Se envía el archivo pec4.zip al servidor:</p>
+	<pre class="codi">scp -P 55000 pec4.zip rbuj@eimtcms2.uoclabs.uoc.es:./public_html/</pre>
+
+	<p>Se inicia sesión al servidor</p>
+	<pre class="codi">ssh -p 55000 rbuj@eimtcms2.uoclabs.uoc.es</pre>
+
+	<p>Se descomprime el archivo en el servidor:</p>
+	<pre class="codi">cd ~/public_html
+unzip pec4.zip</pre>
+
+	<p>Se modifican los permisos de los directorios storage y
+		bootstrap/cache</p>
+	<pre class="codi">chmod -R 777 ~/public_html/pec4/storage
+chmod -R 777 ~/public_html/pec4/bootstrap/cache</pre>
+
+	<p>Se modifica el archivo ~/public_html/pec4/.env con los siguientes
+		valores:</p>
+	<pre class="codi">DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=rbuj
+DB_USERNAME=rbuj
+DB_PASSWORD=sSjDnndR</pre>
+
+	<p>Limpiar y precompilar las vistas:</p>
+	<pre class="codi">cd ~/public_html/pec4
+php artisan view:clear
+php artisan view:cache</pre>
+
+	<h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3353_454554628"></a>
+		8. Ventajas e inconvenientes de los entornos utilizados</h2>
+	<h3 class="western"><a name="__RefHeading___Toc2537_1402909275"></a>8.1. Drupal</h3>
+	<table width="100%" cellpadding="4" cellspacing="0">
+		<col width="128*" />
+		<col width="128*" />
+		<tr valign="top">
+			<td width="50%" bgcolor="#000078"
+				style="background: #000078; border-top: 1px solid #2a6099; border-bottom: 1px solid #2a6099; border-left: 1px solid #2a6099; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p align="center">
+					<font color="#ffffff">Desventajas</font>
+				</p>
+			</td>
+			<td width="50%" bgcolor="#000078" style="background: #000078; border: 1px solid #2a6099; padding: 0.1cm">
+				<p align="center">
+					<font color="#ffffff">Ventajas</font>
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					La curva de aprendizaje es más pronunciada que en otros entornos.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Panel de administración amplio, completo y bien estructurado.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Ampliable mediante plugins, pero su número es limitado.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Gestión transparente de la base de datos.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>Estructura de archivos más compleja que en los otros entornos.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>Herramienta auxiliar dush para la gestión a través de la línea de comandos.</p>
+			</td>
+		</tr>
+	</table>
+
+	<h3 class="western"><a name="__RefHeading___Toc2539_1402909275"></a>8.2. PHP</h3>
+	<table width="100%" cellpadding="4" cellspacing="0">
+		<col width="128*" />
+		<col width="128*" />
+		<tr valign="top">
+			<td width="50%" bgcolor="#000078"
+				style="background: #000078; border-top: 1px solid #2a6099; border-bottom: 1px solid #2a6099; border-left: 1px solid #2a6099; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p align="center">
+					<font color="#ffffff">Desventajas</font>
+				</p>
+			</td>
+			<td width="50%" bgcolor="#000078" style="background: #000078; border: 1px solid #2a6099; padding: 0.1cm">
+				<p align="center">
+					<font color="#ffffff">Ventajas</font>
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Se tienen que desarrollar todos los componentes de la aplicación.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Control total de la base de datos.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Se tienen que gestionar los accesos a la base de datos.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Fácil de depurar.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					La estructura de la aplicación recae en las manos del
+					desarrollador.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Estructura de aplicación sencilla, con tan solo el código de la
+					aplicación.</p>
+			</td>
+		</tr>
+	</table>
+
+	<h3 class="western"><a name="__RefHeading___Toc2541_1402909275"></a>8.3. Laravel</h3>
+	<table width="100%" cellpadding="4" cellspacing="0">
+		<col width="128*" />
+		<col width="128*" />
+		<tr valign="top">
+			<td width="50%" bgcolor="#000078"
+				style="background: #000078; border-top: 1px solid #2a6099; border-bottom: 1px solid #2a6099; border-left: 1px solid #2a6099; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p align="center">
+					<font color="#ffffff">Desventajas</font>
+				</p>
+			</td>
+			<td width="50%" bgcolor="#000078" style="background: #000078; border: 1px solid #2a6099; padding: 0.1cm">
+				<p align="center">
+					<font color="#ffffff">Ventajas</font>
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Se utiliza la estructura de archivos para la definición de
+					vistas, modelos, migraciones, ... y estos están atados entre sí.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					La migración de datos permite integrar cambios a la base de datos
+					de forma gradual.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Hay que aprender la sintaxis para definir modelos, realizar
+					consultas, ...</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Permite desarrollar componentes reutilizables.
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p>
+					Las consultas de tablas relacionadas es más compleja, ya que
+					implica la definición de las relaciones en los modelos.</p>
+			</td>
+			<td width="50%"
+				style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p>
+					Definición de las rutas en un archivo.</p>
+			</td>
+		</tr>
+	</table>
+
+	<div title="footer">
+		<p align="right" style="line-height: 100%; margin-top: 0.5cm; margin-bottom: 0cm">
+			<span style="background: #c0c0c0">
+				<sdfield type=PAGE subtype=RANDOM format=PAGE>1</sdfield>
+			</span>
+		</p>
+	</div>
+</body>
+
+</html>
